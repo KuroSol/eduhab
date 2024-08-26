@@ -1,0 +1,212 @@
+#htmlViewerContainer.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: #1a1a1a;
+}
+
+.content-container.fullscreen {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#htmlViewerContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+#page-container {
+  position: relative !important;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px); /* Adjust height based on the toolbar */
+  overflow: auto;
+}
+
+.toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1050;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(165, 142, 42, 0.623);
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: move;
+  transition: left 0.1s, top 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.toolbar.closed {
+  left: -100%;
+}
+
+.toolbar-toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1051;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.content-container img,
+.content-container table {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container button:focus {
+  outline: none;
+}
+
+.button-container button i {
+  margin-right: 5px;
+}
+
+.button-container button.active {
+  color: yellow;
+}
+
+.pagination-container button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-container button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #htmlViewerContainer.fullscreen,
+  .content-container.fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .button-container {
+    flex-direction: column;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  .pagination-container {
+    top: 10px;
+    padding: 8px;
+  }
+
+  .pagination-container button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  .pagination-container span {
+    font-size: 14px;
+  }
+
+  #htmlViewerContainer {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .content-container {
+    height: calc(100vh - 60px); /* Adjust height based on toolbar */
+    overflow: auto;
+    padding-bottom: 60px; /* Account for bottom toolbar */
+  }
+
+  .toolbar {
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .toolbar-toggle {
+    top: unset;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .pagination-container {
+    top: unset;
+    bottom: 60px; /* Adjust to fit above the toolbar */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header {
+    display: none;
+  }
+}

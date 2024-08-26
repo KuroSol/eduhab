@@ -1,0 +1,134 @@
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body, input {
+  font-family: 'Roboto', sans-serif !important;
+  color: #d4b87e !important; /* Bronze text color for readability */
+  background-color: #141414 !important; /* Dark background color */
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif !important;
+  color: #d4b87e !important; /* Header colors */
+}
+
+/* Primary layout components */
+.header {
+  background-color: #333333 !important; /* Darker header color */
+  color: #d4b87e !important; /* Bronze text color in header */
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: #ffb606 !important; /* Link color */
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+  border: 1px solid #ccc !important;
+}
+
+.main {
+  padding: 20px;
+  min-height: 80vh; /* Adjust based on your content */
+}
+
+.footer {
+  background-color: #333333 !important; /* Footer color to match the header */
+  color: #d4b87e !important; /* Bronze text color for footer */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Centered content container */
+.content-container {
+  margin: auto;
+  padding: 20px;
+  background-color: #141414 !important;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5) !important;
+  border: 1px solid #333 !important;
+}
+
+
+/* Buttons and links */
+button {
+  width: 100% !important; /* Full width to container */
+  padding: 0.625rem !important; /* 10px if the base font-size is 16px */
+  border: none;
+  background-color: #95642a !important;  /* Dark bronze button color */
+  color: #ffffff !important; /* White text for contrast */
+  border-radius: 0.25rem !important; /* Consistent rounded corners */
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+  margin-top: 0.3125rem !important; /* Responsive vertical spacing */
+  font-size: 1rem !important; /* Accessible font size */
+}
+button:hover {
+  background-color: #d4b87e !important;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Error text styling */
+.error {
+  color: #ff6464 !important; /* Error color for visibility against dark background */
+  font-size: 0.85em !important;
+  margin-top: 10px;
+}
+
+/* Global styles for all input fields */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #95642a !important; /* Consistent bronze border */
+  background-color: #333333 !important; /* Dark background for input fields */
+  color: #d4b87e !important; /* Bronze text color */
+  border-radius: 4px !important; /* Rounded corners for inputs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header, .footer {
+    padding: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  button {
+    padding: 0.5rem 1rem; /* Slightly larger padding for easier touch */
+    font-size: 1.125rem; /* Larger font size for readability on small devices */
+  }
+}
+

@@ -1,0 +1,48 @@
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #141414;  /* Dark background for a sleek look */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Stronger shadow for depth on dark backgrounds */
+  border: 1px solid #333;  /* Dark grey border to blend with the background */
+}
+
+.login-container form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #d4b87e; /* Bronze text color for labels */
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #95642a; /* Bronze border for input fields */
+  border-radius: 4px;
+  background-color: #333333; /* Darker input field for seamless integration */
+  color: #d4b87e; /* Text color for input */
+  font-size: 16px;
+}
+
+.login-container form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #95642a; /* Dark bronze button color */
+  color: #ffffff; /* White text for contrast */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container form button:hover {
+  background-color: #d4b87e; /* Lighter bronze for hover effect */
+}
+
+.error {
+  color: #ff6464; /* Error color for visibility against dark background */
+  font-size: 0.85em;
+  margin-top: 10px;
+}

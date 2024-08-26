@@ -1,0 +1,119 @@
+/* Profile.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414; /* Dark background for the body */
+    color: #d4b87e; /* Bronze text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* Clears floats */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333333; /* Darker shade for header */
+    color: #d4b87e; /* Bronze text color */
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .user-info {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px;
+}
+
+.profile-header {
+    background-color: #333333; /* Dark shade for profile header */
+    color: #d4b87e; /* Bronze text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-content {
+    background: #333333; /* Matching dark background for content box */
+    color: #d4b87e; /* Bronze text color */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Deeper shadow for emphasis */
+    border: 1px solid #95642a; /* Bronze border to complement the theme */
+}
+
+.button {
+    background-color: #95642a; /* Dark bronze button color */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d4b87e; /* Lighter bronze for hover effect */
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #95642a; /* Bronze border */
+    border-radius: 4px;
+    background-color: #333333; /* Dark input field background */
+    color: #d4b87e; /* Bronze text color */
+}
+
+label {
+    font-weight: bold;
+    color: #d4b87e; /* Bronze label color */
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.book-item {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.book-item h3 {
+    margin-top: 0;
+}
+
+.button {
+    background-color: #95642a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;  /* Ensure it’s a block to fill container */
+}
+
+.button:hover {
+    background-color: #d4b87e;
+}

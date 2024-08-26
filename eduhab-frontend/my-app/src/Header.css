@@ -1,0 +1,92 @@
+/* Header.css */
+.header {
+  background-color: #333333; /* Updated to the darker color for the header background */
+  color: #95642a; /* Using bronze as the main text color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adds space below the header */
+}
+
+.header .logo {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Align items to the start for a top-aligned look */
+}
+.header .logo img {
+  height: 60px; /* Adjust based on your design needs */
+  width: auto; /* Maintain aspect ratio */
+}
+.header .logo .main-logo {
+  font-size: 24px; /* Larger font size for main logo */
+  font-weight: bold; /* Bold font weight for emphasis */
+  margin: 0;
+  color: #95642a; /* Using bronze for the logo text */
+}
+
+.header .logo .tagline {
+  font-size: 14px; /* Smaller font size for tagline */
+  font-weight: normal; /* Normal font weight for subtlety */
+  color: #d4b87e; /* A lighter shade of bronze for less emphasis */
+  margin-top: -5px; /* Closer to the main logo */
+}
+
+.header .user-info {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header .user-info img, .menu-icon span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Makes the image round */
+  margin-right: 10px;
+}
+
+.header .user-info span, .menu-icon span {
+  color: #95642a; /* Text in the user-info and menu icon using bronze */
+}
+
+.header .menu-icon {
+  display: block; /* Always show the menu icon */
+  cursor: pointer;
+}
+
+.header .sidebar {
+  position: fixed; /* Using fixed to keep it attached when scrolling */
+  top: 0; /* Align with the top of the viewport */
+  right: 0; /* Align to the right edge */
+  background-color: #333333; /* Same as header background for consistency */
+  width: 250px; /* Standard width for the sidebar */
+  height: 100%; /* Full height to cover the whole vertical space */
+  transform: translateX(100%); /* Initially hidden off the screen */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+  padding: 20px; /* Adequate padding for content */
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5); /* Subtle shadow to the left of the sidebar */
+}
+
+.header .sidebar.open {
+  transform: translateX(0); /* Move sidebar into view */
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .header .logo .main-logo, .header .logo .tagline {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .header .user-info img, .menu-icon span {
+    width: 25px;
+    height: 25px; /* Adjust icon size for better fit on smaller screens */
+  }
+
+  .header .menu-icon {
+    margin-left: 10px; /* Ensure there's space around the menu icon */
+  }
+}

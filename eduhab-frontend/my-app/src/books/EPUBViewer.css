@@ -1,0 +1,12 @@
+#book-container {
+    width: 600px;  /* This can be 100% if you prefer full width */
+    margin: auto;  /* Center the book container */
+    display: block;
+    overflow-y: auto; /* Adds scroll bar if content overflows */
+}
+
+.controls {
+    text-align: center;
+    padding: 10px 0;
+}
+

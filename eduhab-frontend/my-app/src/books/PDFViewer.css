@@ -1,0 +1,53 @@
+.pdf-viewer-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.toolbar-btn {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background-color: #555;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar-btn.enabled {
+  background-color: #4CAF50 !important;
+  color: white;
+}
+
+.toolbar-btn.disabled {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.toolbar-btn:hover {
+  background-color: #777;
+}
+
+.pdf-container {
+  flex: 1;
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+}
+.text-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  pointer-events: none;
+  transform-origin: top left;
+}

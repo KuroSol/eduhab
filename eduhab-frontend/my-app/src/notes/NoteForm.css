@@ -1,0 +1,84 @@
+/* NoteForm.css */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333; /* Dark gray for better readability */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc; /* Neutral border color */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.react-quill, .ProseMirror {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.ProseMirror:focus {
+    outline: none;
+    border-color: #ffb606; /* Bright highlight color for focus */
+}
+
+.button:hover {
+    background-color: #d4b87e; /* Secondary button hover color */
+}
+
+.error-message, .success-message {
+    color: #d9534f; /* Bootstrap's standard error color for consistency */
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #5cb85c; /* Bootstrap's standard success color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .form-label, input[type="text"], .react-quill, .ProseMirror, .button {
+        font-size: 14px; /* Slightly smaller font on mobile for better usability */
+    }
+
+    input[type="text"], .react-quill, .ProseMirror, .button {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        padding: 10px; /* Adjust button padding for better tapping area */
+    }
+}
+
+/* Further adjust for very small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-label, input[type="text"], .react-quill, .ProseMirror, .button {
+        font-size: 12px; /* Further reduce font size for small devices */
+    }
+}
