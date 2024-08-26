@@ -1,8 +1,0 @@
-WARNING 2024-08-24 22:47:36,088 log Not Found: /admin-post.php
-WARNING 2024-08-24 22:47:38,776 log Not Found: /adminfuns.php7
-WARNING 2024-08-25 02:43:22,252 log Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
-WARNING 2024-08-25 19:49:30,586 log Not Found: /admin-post.php
-WARNING 2024-08-25 19:49:33,518 log Not Found: /adminfuns.php7
-WARNING 2024-08-25 21:11:31,494 log Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
-WARNING 2024-08-26 06:05:33,531 log Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
-WARNING 2024-08-26 06:35:30,007 log Not Found: /api/session/properties
